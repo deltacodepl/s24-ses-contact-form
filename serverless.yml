@@ -38,9 +38,10 @@ functions:
           method: post
           integration: lambda
           cors: true
+          origin: 'http://ringmappen24.de'
           response:
             headers:
-              "Access-Control-Allow_Origin": "'*'"
+              "Access-Control-Allow_Origin": "'http://ringmappen24.de'"
   list:
     handler: handler.list
     description: List all the contact form submissions
